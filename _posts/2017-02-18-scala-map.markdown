@@ -7,9 +7,9 @@ categories: scala map
 
 ---
 
-Scala map can be used to iterate through each element and can be performed operation on each element.  
+Scala map can be used to iterate through each element of collection and can be performed operation on each element.  
 
-Scala map example:
+Scala basic map example:
 ==================
 
 Iterate and multiply each element by 2
@@ -19,6 +19,23 @@ val list = List(1, 2, 3)
 list.map(element => element * 2)
 
 result :  List(2, 4, 6)
+{% endhighlight %}
+
+User wants only names and emails of customers:
+===============================================
+
+Problem: How to extract names and emails of customers?  Given: list of customer.
+{% highlight scala %}
+
+case class Customer(id: String, name: String, email: String, city:String)
+
+val customers = List(Customer("1", "John", "john@mail.com", "London"), 
+Customer("2", "Andy", "andy@mail.com", "Paris"))
+
+customers.map(customer => Map(customer.name -> customer.email))
+
+result: List(Map(John -> john@mail.com), Map(andy -> any@mail.com))
+
 {% endhighlight %}
 
 
@@ -46,11 +63,11 @@ Example,
 
 {% highlight scala %}
 
-val list:Set[Int] = Set(1, 2, 3)  //Set of Int
+val set:Set[Int] = Set(1, 2, 3)  //Set of Int
 
-list.map(element => "number"+element)
+set.map(element => "number"+element)
 
-result:Set[String] : Set(Number1, Number2, Number3)  //Set of String
+result:Set[String] : Set(number1, number2, number3)  //Set of String
 {% endhighlight %}
 
 Scala map converts one type of collection to other type of collection:

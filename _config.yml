@@ -16,7 +16,7 @@
 title: Scala Construct
 email: ashok@scalaconstruct.com
 description: > # this means to ignore newlines until "baseurl:"
-  Scalaconstruct.com is all about building blocks of scala, it focuses on practical usage of scala with examples and code snippets.
+  Explore scala world, it's all about building blocks of scala, it focuses on practical usage of scala with examples and code snippets.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ashokwaghmare_
