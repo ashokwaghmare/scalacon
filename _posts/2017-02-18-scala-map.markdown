@@ -4,7 +4,7 @@ title:  "Scala map"
 meta: "scala map with example, function as parameter, Short-hand for Scala map"
 date:   2017-02-18 11:11:37 +0530
 categories: scala map
-permalink: /scala-map
+
 ---
 
 Scala map can be used to iterate through each element and can be performed operation on each element.  

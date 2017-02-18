@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about
+permalink: /about/
 ---
 
 This site is built to focus on practiacal usage of scala. How to use different scala constructs in everydays activities. 
