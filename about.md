@@ -1,15 +1,13 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This site is built to focus on practiacal usage of scala. How to use different scala constructs in everydays activities. 
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+Built by [ashokwaghmare](https://twitter.com/ashokwaghmare_) based on hands on coding experience.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+If you any need help on scala code contact:
+
+Email - <a href="mailto:ashok@scalaconstruct.com">ashok@scalaconstruct.com</a>

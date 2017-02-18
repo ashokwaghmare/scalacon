@@ -1,0 +1,90 @@
+---
+layout: post
+title:  "Scala map"
+meta: "scala map with example, function as parameter, Short-hand for Scala map"
+date:   2017-02-18 11:11:37 +0530
+categories: scala map
+permalink: /scala-map
+---
+
+Scala map can be used to iterate through each element and can be performed operation on each element.  
+
+Scala map example:
+==================
+
+Iterate and multiply each element by 2
+
+{% highlight scala %}
+val list = List(1, 2, 3)
+list.map(element => element * 2)
+
+result :  List(2, 4, 6)
+{% endhighlight %}
+
+
+Scala map with function as parameter:
+=====================================
+
+extract multiplication in a function and give call to it from map.
+
+{% highlight scala %}
+
+def multiply(element: Int) :Int = element * 2
+
+val list = List(1, 2, 3)
+list.map(element => multiply(element))
+
+result :  List(2, 4, 6)
+{% endhighlight %}
+
+
+Scala map converts collection of Int to collection of String:
+============================================================
+
+Scala map converts Sequence of any type to Sequence of any other type.
+Example,
+
+{% highlight scala %}
+
+val list:Set[Int] = Set(1, 2, 3)  //Set of Int
+
+list.map(element => "number"+element)
+
+result:Set[String] : Set(Number1, Number2, Number3)  //Set of String
+{% endhighlight %}
+
+Scala map converts one type of collection to other type of collection:
+=====================================================================
+
+Scala map converts Sequence of any type to Sequence of any other type.
+Example,
+
+{% highlight scala %}
+
+val map = Map("x" -> 1, "y" -> 2, "z" -> 3) // type Map[String,Int]
+map.map(e => e._1)
+
+result:List[String] : List(x, y, z)  //List of String
+{% endhighlight %}
+
+Short-hand for Scala map:
+=======================
+
+Use _ as shorthand for each element
+Example,
+
+{% highlight scala %}
+
+val list = List(1, 2, 3)
+
+list.map(_ * 2)        // _ for each element       
+
+result :  List(2, 4, 6)
+{% endhighlight %}
+
+
+
+
+
+
+
