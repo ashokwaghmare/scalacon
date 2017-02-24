@@ -8,6 +8,7 @@ This site is built to focus on practiacal usage of scala. How to use different s
 
 Built by [ashokwaghmare](https://twitter.com/ashokwaghmare_) based on hands on coding experience.
 
-If you any need help on scala code contact:
+If you need any help on scala code:
 
-Email - <a href="mailto:ashok@scalaconstruct.com">ashok@scalaconstruct.com</a>
+Email me <a href="mailto:ashok@scalaconstruct.com">ashok@scalaconstruct.com</a> or follow me on tweeter [ashokwaghmare](https://twitter.com/ashokwaghmare_)
+
