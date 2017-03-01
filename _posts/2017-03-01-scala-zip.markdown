@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "Scala zip"
+meta: "scala zip with example - merges two collections"
+date:   2017-03-01 11:11:37 +0530
+categories: scala zip
+
+---
+
+Scala zip merges two collections.  
+
+Scala zip example:
+==========================
+Merge two lists, 
+
+{% highlight scala %}
+val listOfInt = List(1, 2, 3)
+
+val listOfString = List("a", "b", "c")
+
+val zipOfLists = listOfInt zip listOfString
+
+zipOfLists: List[(Int, String)] = List((1,a), (2,b), (3,c)) //outcome, list of tuples
+
+{% endhighlight %}
+
+User wants list of results from list of title and list of summary
+================================================================
+
+Problem: How to create list of results? given list of title and list of summary, result is combination of title and summary.
+{% highlight scala %}
+
+case class Title(titleText: String, link: String)
+
+case class Summary(text: String, update: String)
+
+case class Result(title: Title, summary: Summary)
+
+val titles = List(Title("title1", "http://ttl1.html"), Title("title2", "http://ttl2.html"))
+
+val summaries = List(Summary("summary1", "date changed"), Summary("summary2", "-"))
+
+val result = titles zip summaries
+
+result: List[(Title, Summary)] = List(
+		(Title(title1,http://ttl1.html),Summary(summary1,date changed)), 
+		(Title(title2,http://ttl2.html),Summary(summary2,-))
+		)
+
+result.map(tuple => Result(tuple._1, tuple._2))
+
+listOfresult: List[Result] = List(
+			Result(Title(title1,http://ttl1.html),Summary(summary1,date changed)), 
+			Result(Title(title2,http://ttl2.html),Summary(summary2,-))
+			)
+
+{% endhighlight %}
+
