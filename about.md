@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-This site is built to focus on practiacal usage of scala. How to use different scala constructs in everydays activities. 
+This site is built to focus on practical usage of scala. How to use different scala constructs in everyday activities. 
 
 Built by [ashokwaghmare](https://twitter.com/ashokwaghmare_) based on hands on coding experience.
 
